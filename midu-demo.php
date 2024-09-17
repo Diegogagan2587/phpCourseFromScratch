@@ -11,11 +11,6 @@ var_dump($age);
 ?>
 
 <?php
-echo "This is index.php";
-echo "<br>";
-echo "Hello World!!!!";
-echo "<br>";
-echo "This is a PHP file";
 if ($isDev) {
     echo "<br>";
     echo "I am a developer";
@@ -35,8 +30,8 @@ echo $outputAge;
     <?= "This is another way to use echo" ?>
 </h1>
 <ul>
-    <?php foreach ($bestLanguages as $language) : ?>
-        <li><?= $language ?></li>
+    <?php foreach ($bestLanguages as $key => $language) : ?>
+        <li><?= $key . " " . $language ?></li>
     <?php endforeach; ?>
 </ul>
 
